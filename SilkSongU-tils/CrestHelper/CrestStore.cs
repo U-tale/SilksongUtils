@@ -31,7 +31,16 @@ namespace SilksongUTils.CrestHelper
             };
         }
 
-
-        
+        public static void ReplaceCrest(string Crest, HeroController.ConfigGroup config)
+        {
+            if (groups == null) 
+            {
+                return;
+            }
+            else
+            {
+                groups[CrestMaker.CrestList.IndexOf(Crest)] = config;
+            } 
+        }
     }
 }

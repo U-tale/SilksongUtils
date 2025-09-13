@@ -4,6 +4,7 @@ using System.Text;
 using BepInEx;
 using SilkSongUtils;
 using UnityEngine;
+using static HeroController;
 
 namespace SilksongUTils.CrestHelper
 {
@@ -83,6 +84,11 @@ namespace SilksongUTils.CrestHelper
             if (configGroup == null) { return; }
             configGroup.Setup();
         }
+        public void EditCrestAttacks(string Crest)
+        {
+            CrestStore.ReplaceCrest(Crest, configGroup);
+        }
+
         public abstract void DashFSM();
         public abstract void NailArtFSM();
     }
