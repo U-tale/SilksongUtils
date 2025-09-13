@@ -5,6 +5,7 @@ using BepInEx;
 using SilkSongUtils;
 using UnityEngine;
 using static HeroController;
+using System.Reflection;
 
 namespace SilksongUTils.CrestHelper
 {
@@ -19,6 +20,7 @@ namespace SilksongUTils.CrestHelper
             CrestStore.StoreNewCrest(CrestToAdd,configGroup);
         }
 
+        private string? CrestName;
         public bool IsUnlocked { get; set; }
         public void UnlockCrest(string CrestToUnlock)
         {
@@ -42,7 +44,9 @@ namespace SilksongUTils.CrestHelper
 
 
         public HeroControllerConfig? heroControllerConfig;
-        public int CurrentCrest;
+        internal int CurrentCrest;
+        // CurrentCrest is a misnomer, do not use to get the int of the current crest!
+
         private HeroController.ConfigGroup configGroup;
         #region SlashGameObjects
         public GameObject? activeRootObject { get; set; }
@@ -91,5 +95,18 @@ namespace SilksongUTils.CrestHelper
 
         public abstract void DashFSM();
         public abstract void NailArtFSM();
+
+        public void getCrestNumbers()
+        {
+            CrestName = PlayerData.instance.GetString(nameof(PlayerData.CurrentCrestID));
+            if (CrestName is "Wanderer" | CrestName is "Witch" | CrestName is "Architect" | CrestName is "Shaman" | CrestName is "Hunter" | CrestName is "Beast")
+            {
+                CurrentCrest = 1;
+            }
+            else
+            {
+                CurrentCrest = 7;
+            }
+        }
     }
 }
