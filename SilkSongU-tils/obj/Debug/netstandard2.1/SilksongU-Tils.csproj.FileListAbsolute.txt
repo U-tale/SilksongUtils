@@ -1,0 +1,6 @@
+C:\Users\hunte\OneDrive\Documents\Desktop\SilkyMods\SilkSongU-tils\obj\Debug\netstandard2.1\SilksongU-Tils.csproj.AssemblyReference.cache
+C:\Users\hunte\OneDrive\Documents\Desktop\SilkyMods\SilkSongU-tils\obj\Debug\netstandard2.1\PluginInfo.cs
+C:\Users\hunte\OneDrive\Documents\Desktop\SilkyMods\SilkSongU-tils\obj\Debug\netstandard2.1\SilksongU-Tils.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hunte\OneDrive\Documents\Desktop\SilkyMods\SilkSongU-tils\obj\Debug\netstandard2.1\SilksongU-Tils.AssemblyInfoInputs.cache
+C:\Users\hunte\OneDrive\Documents\Desktop\SilkyMods\SilkSongU-tils\obj\Debug\netstandard2.1\SilksongU-Tils.AssemblyInfo.cs
+C:\Users\hunte\OneDrive\Documents\Desktop\SilkyMods\SilkSongU-tils\obj\Debug\netstandard2.1\SilksongU-Tils.csproj.CoreCompileInputs.cache

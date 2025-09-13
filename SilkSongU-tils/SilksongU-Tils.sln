@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilksongUTils", "SilksongUTils.csproj", "{09D15425-7193-30AF-3541-4B16DE8FACCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09D15425-7193-30AF-3541-4B16DE8FACCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D15425-7193-30AF-3541-4B16DE8FACCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D15425-7193-30AF-3541-4B16DE8FACCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D15425-7193-30AF-3541-4B16DE8FACCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0BE994B8-DC6F-4719-B51E-AF1838437403}
+	EndGlobalSection
+EndGlobal

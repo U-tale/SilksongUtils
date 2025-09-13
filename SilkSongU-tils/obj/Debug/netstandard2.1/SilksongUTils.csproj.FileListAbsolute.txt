@@ -1,0 +1,11 @@
+C:\Users\hunte\OneDrive\Documents\Desktop\SilkyMods\SilkSongU-tils\bin\Debug\netstandard2.1\SilksongUTils.deps.json
+C:\Users\hunte\OneDrive\Documents\Desktop\SilkyMods\SilkSongU-tils\bin\Debug\netstandard2.1\SilksongUTils.dll
+C:\Users\hunte\OneDrive\Documents\Desktop\SilkyMods\SilkSongU-tils\bin\Debug\netstandard2.1\SilksongUTils.pdb
+C:\Users\hunte\OneDrive\Documents\Desktop\SilkyMods\SilkSongU-tils\obj\Debug\netstandard2.1\SilksongUTils.csproj.AssemblyReference.cache
+C:\Users\hunte\OneDrive\Documents\Desktop\SilkyMods\SilkSongU-tils\obj\Debug\netstandard2.1\PluginInfo.cs
+C:\Users\hunte\OneDrive\Documents\Desktop\SilkyMods\SilkSongU-tils\obj\Debug\netstandard2.1\SilksongUTils.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hunte\OneDrive\Documents\Desktop\SilkyMods\SilkSongU-tils\obj\Debug\netstandard2.1\SilksongUTils.AssemblyInfoInputs.cache
+C:\Users\hunte\OneDrive\Documents\Desktop\SilkyMods\SilkSongU-tils\obj\Debug\netstandard2.1\SilksongUTils.AssemblyInfo.cs
+C:\Users\hunte\OneDrive\Documents\Desktop\SilkyMods\SilkSongU-tils\obj\Debug\netstandard2.1\SilksongUTils.csproj.CoreCompileInputs.cache
+C:\Users\hunte\OneDrive\Documents\Desktop\SilkyMods\SilkSongU-tils\obj\Debug\netstandard2.1\SilksongUTils.dll
+C:\Users\hunte\OneDrive\Documents\Desktop\SilkyMods\SilkSongU-tils\obj\Debug\netstandard2.1\SilksongUTils.pdb
