@@ -11,7 +11,7 @@ namespace SilksongUTils.CrestHelper
     {
 
         
-        public static List<HeroController.ConfigGroup> groups = new List<HeroController.ConfigGroup>();
+        public static List<HeroController.ConfigGroup> groups = [];
         
         public static void StoreNewCrest(string Crest, HeroController.ConfigGroup config)
         {

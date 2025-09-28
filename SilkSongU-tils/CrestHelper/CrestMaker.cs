@@ -6,6 +6,9 @@ using SilkSongUtils;
 using UnityEngine;
 using static HeroController;
 using System.Reflection;
+using MonoMod.RuntimeDetour;
+using HarmonyLib;
+
 
 namespace SilksongUTils.CrestHelper
 {
@@ -44,10 +47,10 @@ namespace SilksongUTils.CrestHelper
 
 
         public HeroControllerConfig? heroControllerConfig;
-        internal int CurrentCrest;
+        internal static int CurrentCrest;
         // CurrentCrest is a misnomer, do not use to get the int of the current crest!
 
-        private HeroController.ConfigGroup configGroup;
+        private HeroController.ConfigGroup configGroup = new();
         #region SlashGameObjects
         public GameObject? activeRootObject { get; set; }
         public GameObject? slashObject { get; set; }
@@ -58,17 +61,11 @@ namespace SilksongUTils.CrestHelper
         public GameObject? slashWallObject { get; set; }
         #endregion
 
-        public HeroController.ConfigGroup getConfigGroup()
-        {
-            if (CurrentCrest > 6)
-            {
-                return CrestStore.groups[CurrentCrest - 6];
-            }
-            else
-            {
-                return getConfigGroup();
-            }
-        }
+        
+            
+
+        
+        
 
                 
         public void NewCrestBaseAttacks()
@@ -96,7 +93,7 @@ namespace SilksongUTils.CrestHelper
         public abstract void DashFSM();
         public abstract void NailArtFSM();
 
-        public void getCrestNumbers()
+        public void GetCrestNumbers()
         {
             CrestName = PlayerData.instance.GetString(nameof(PlayerData.CurrentCrestID));
             if (CrestName is "Wanderer" | CrestName is "Witch" | CrestName is "Architect" | CrestName is "Shaman" | CrestName is "Hunter" | CrestName is "Beast")
@@ -105,8 +102,21 @@ namespace SilksongUTils.CrestHelper
             }
             else
             {
-                CurrentCrest = 7;
+                CurrentCrest = CrestList.IndexOf(CrestName);
             }
+        }
+    }
+
+    [HarmonyPatch(typeof(HeroController), nameof(HeroController.SetConfigGroup))]
+    class Patch
+    { 
+        static void Prefix(ref ConfigGroup configGroup, ConfigGroup overrideGroup)
+        {
+            if (CrestMaker.CurrentCrest > 6)
+            {
+                configGroup = CrestStore.groups[CrestMaker.CurrentCrest - 6];
+            }
+            return;
         }
     }
 }

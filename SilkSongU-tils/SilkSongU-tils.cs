@@ -6,6 +6,7 @@ using Newtonsoft.Json.Bson;
 using UnityEngine;
 using System;
 
+
 namespace SilkSongUtils;
 
 [BepInPlugin("SilkUtils", "SilksongUtils", "0.0.0.0")]
@@ -13,6 +14,7 @@ public class SilkSongU_tils : BaseUnityPlugin
 {
     private void Awake()
     {
+        CrestHelper.Setup();
         // Put your initialization logic here
         Log("Plugin SilksongUtils has loaded!");
     }
