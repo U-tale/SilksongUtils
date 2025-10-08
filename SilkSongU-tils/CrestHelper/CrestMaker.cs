@@ -110,7 +110,7 @@ namespace SilksongUTils.CrestHelper
     [HarmonyPatch(typeof(HeroController), nameof(HeroController.SetConfigGroup))]
     class Patch
     { 
-        static void Prefix(ref ConfigGroup configGroup, ConfigGroup overrideGroup)
+        static void Prefix(ref ConfigGroup configGroup)
         {
             if (CrestMaker.CurrentCrest > 6)
             {
@@ -118,5 +118,6 @@ namespace SilksongUTils.CrestHelper
             }
             return;
         }
+        //Makes the functional ConfigGroup the intended one if the currentcrest is an added one, while leaving the backup alone.
     }
 }

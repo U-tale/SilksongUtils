@@ -14,9 +14,9 @@ public class SilkSongU_tils : BaseUnityPlugin
 {
     private void Awake()
     {
-        CrestHelper.Setup();
         // Put your initialization logic here
         Log("Plugin SilksongUtils has loaded!");
+        Log("That means almost nothing!");
     }
 
 
@@ -24,8 +24,4 @@ public class SilkSongU_tils : BaseUnityPlugin
     {
         Logger.LogInfo(message);
     }
-
-
-
-    
 }
